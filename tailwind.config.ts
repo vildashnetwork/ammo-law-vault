@@ -47,23 +47,24 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        trust: {
-          blue: "hsl(var(--trust-blue))",
-          "blue-light": "hsl(var(--trust-blue-light))",
+        dark: {
+          bg: "hsl(var(--dark-bg))",
+          panel: "hsl(var(--dark-panel))",
+          "panel-hover": "hsl(var(--dark-panel-hover))",
         },
-        warm: {
-          neutral: "hsl(var(--warm-neutral))",
-          accent: "hsl(var(--warm-accent))",
-          "accent-light": "hsl(var(--warm-accent-light))",
+        orange: {
+          accent: "hsl(var(--orange-accent))",
+          "accent-hover": "hsl(var(--orange-accent-hover))",
         },
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
-        "gradient-subtle": "var(--gradient-subtle)",
+        "gradient-overlay": "var(--gradient-overlay)",
+        "gradient-card": "var(--gradient-card)",
       },
       boxShadow: {
-        soft: "var(--shadow-soft)",
-        medium: "var(--shadow-medium)",
+        glow: "var(--shadow-glow)",
+        deep: "var(--shadow-deep)",
         card: "var(--shadow-card)",
       },
       transitionProperty: {

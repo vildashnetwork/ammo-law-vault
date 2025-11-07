@@ -3,7 +3,9 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
+import DarkIndex from "./pages/DarkIndex";
+import Catalog from "./pages/Catalog";
+import CatalogDetail from "./pages/CatalogDetail";
 import StateLaws from "./pages/StateLaws";
 import SafetyResources from "./pages/SafetyResources";
 import FindFFL from "./pages/FindFFL";
@@ -22,10 +24,12 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/state-laws" element={<StateLaws />} />
+          <Route path="/" element={<DarkIndex />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/catalog/:id" element={<CatalogDetail />} />
+          <Route path="/laws" element={<StateLaws />} />
           <Route path="/safety" element={<SafetyResources />} />
-          <Route path="/find-ffl" element={<FindFFL />} />
+          <Route path="/find-dealer" element={<FindFFL />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
